@@ -1,0 +1,51 @@
+<svg width="212" height="18" viewBox="0 0 212 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1090_3186)">
+<g clip-path="url(#clip1_1090_3186)">
+<path d="M15.9996 18L0 2.52849V0L15.9996 15.4715L31.9992 0V2.52849L15.9996 18Z" fill="#111111"/>
+</g>
+<g clip-path="url(#clip2_1090_3186)">
+<path d="M48.0006 18L32.001 2.52849V0L48.0006 15.4715L64.0002 0V2.52849L48.0006 18Z" fill="#111111"/>
+</g>
+<g clip-path="url(#clip3_1090_3186)">
+<path d="M79.9996 18L64 2.52849V0L79.9996 15.4715L95.9992 0V2.52849L79.9996 18Z" fill="#111111"/>
+</g>
+<g clip-path="url(#clip4_1090_3186)">
+<path d="M112.001 18L96.001 2.52849V0L112.001 15.4715L128 0V2.52849L112.001 18Z" fill="#111111"/>
+</g>
+<g clip-path="url(#clip5_1090_3186)">
+<path d="M144 18L128 2.52849V0L144 15.4715L159.999 0V2.52849L144 18Z" fill="#111111"/>
+</g>
+<g clip-path="url(#clip6_1090_3186)">
+<path d="M176.001 18L160.001 2.52849V0L176.001 15.4715L192 0V2.52849L176.001 18Z" fill="#111111"/>
+</g>
+<g clip-path="url(#clip7_1090_3186)">
+<path d="M208 18L192 2.52849V0L208 15.4715L223.999 0V2.52849L208 18Z" fill="#111111"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1090_3186">
+<rect width="212" height="18" fill="white"/>
+</clipPath>
+<clipPath id="clip1_1090_3186">
+<rect width="31.9992" height="18" fill="white" transform="matrix(1 0 0 -1 0 18)"/>
+</clipPath>
+<clipPath id="clip2_1090_3186">
+<rect width="31.9992" height="18" fill="white" transform="matrix(1 0 0 -1 32.001 18)"/>
+</clipPath>
+<clipPath id="clip3_1090_3186">
+<rect width="31.9992" height="18" fill="white" transform="matrix(1 0 0 -1 64 18)"/>
+</clipPath>
+<clipPath id="clip4_1090_3186">
+<rect width="31.9992" height="18" fill="white" transform="matrix(1 0 0 -1 96.001 18)"/>
+</clipPath>
+<clipPath id="clip5_1090_3186">
+<rect width="31.9992" height="18" fill="white" transform="matrix(1 0 0 -1 128 18)"/>
+</clipPath>
+<clipPath id="clip6_1090_3186">
+<rect width="31.9992" height="18" fill="white" transform="matrix(1 0 0 -1 160.001 18)"/>
+</clipPath>
+<clipPath id="clip7_1090_3186">
+<rect width="31.9992" height="18" fill="white" transform="matrix(1 0 0 -1 192 18)"/>
+</clipPath>
+</defs>
+</svg>
