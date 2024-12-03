@@ -102,6 +102,10 @@ ol {
   background-size: cover;
 }
 
+.sticky .banner__slider {
+  margin-top: 130px;
+}
+
 .banner__slider::before {
   content: "";
   display: block;
@@ -116,13 +120,13 @@ ol {
 }
 
 .header,
-.header.sticky {
+.sticky .header {
   background: transparent url(/public/img/linha_horrizontal_branca.svg);
   background-repeat: repeat-x;
   background-position: left bottom;
 }
 
-.header.sticky {
+.sticky .header {
   position: fixed;
   top: 0;
   left: 0;
@@ -151,8 +155,11 @@ ol {
   background-size: cover;
 }
 
-.logo__topo_link.sticky {
-  background-image: url(/public/img/logo_prowork_cor.svg);
+.sticky .header .logo__topo_link {
+  width: 12rem;
+  height: 1.5rem;
+  background: url(/public/img/logo_prowork_cor.svg) no-repeat center center;
+  background-size: cover;
 }
 
 .menu__overlay {
@@ -181,7 +188,7 @@ ol {
   text-transform: uppercase;
 }
 
-.menu__overlay-links a.sticky {
+.sticky .header .menu__overlay-links a {
   color: var(--color-black);
 }
 
@@ -191,7 +198,7 @@ ol {
   opacity: inherit;
 }
 
-.menu__overlay-links a:hover.sticky {
+.sticky .header .menu__overlay-links a:hover {
   background: url(/public/img/zig_zag_horizontal_black_menu.svg) repeat-x left
     bottom;
 }
@@ -203,7 +210,7 @@ ol {
   cursor: default;
 }
 
-.menu__overlay a.active.sticky {
+.sticky .header .menu__overlay a.active {
   background: url(/public/img/zig_zag_horizontal_black_menu.svg) repeat-x left
     bottom;
   cursor: default;
@@ -229,7 +236,7 @@ ol {
   mask-image: url(/public/img/icon_whatsapp.svg);
 }
 
-.menu__overlay-social a.whatsapp.sticky {
+.sticky .header .menu__overlay-social a.whatsapp {
   background: var(--color-black);
 }
 
@@ -237,7 +244,7 @@ ol {
   mask: url(/public/img/icon_instagram.svg);
 }
 
-.menu__overlay-social a.instagram.sticky {
+.sticky .header .menu__overlay-social a.instagram {
   background: var(--color-black);
 }
 
@@ -262,7 +269,7 @@ ol {
   background: var(--color-white);
 }
 
-.header.sticky .exibir__menu {
+.sticky .header .exibir__menu {
   background: var(--color-black);
 }
 
@@ -416,6 +423,11 @@ ol {
   width: 212px;
   height: var(--size-xl);
   background: url(/public/img/zig_zag_black.svg) no-repeat left bottom;
+}
+
+.sticky header ~ main {
+  margin-top: 130px;
+  padding-top: 16px;
 }
 
 .como__funciona {
@@ -705,7 +717,7 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
 }
 
 .faq__esquerda details[open] p {
-  color: #585858;
+  color: var(--color-gray);
   font-family: var(--font-primary);
   font-size: var(size-base);
   font-style: normal;
@@ -714,6 +726,53 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
   padding: 0 32px 32px 64px;
 }
 
+.titulo__breadcrumbs {
+  width: var(--container-lg);
+  margin: 0 auto 64px auto;
+  background: url(/public/img/linha_horrizontal_black.svg);
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
+.titulo__breadcrumbs h1 {
+  padding-top: var(--size-4-5xl);
+  padding-bottom: var(--size-4-5xl);
+}
+.breadcrumbs ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 16px;
+}
+.breadcrumbs ul a {
+  display: inline-block;
+  color: var(--color-brand-secundary, #111);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-regular);
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.breadcrumbs ul span {
+  display: block;
+  color: #727272;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: var(--font-bold);
+  line-height: 24px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.titulo__breadcrumbs i {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(/public/img/icon_breadcrumb.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 footer {
   padding: 104px 0;
   background: var(--color-black)
@@ -1015,7 +1074,13 @@ a.btn:hover {
   background: var(--color-black);
   color: var(--color-white);
 }
-
+.titulo__paginas__internas {
+  color: var(--color-black);
+  font-family: var(--font-display);
+  font-size: var(--size-7xl);
+  font-weight: var(--font-regular);
+  line-height: var(--size-8xl);
+}
 .titulo__secoes {
   padding-bottom: var(--size-2xl);
   font-family: var(--font-display);
@@ -1045,8 +1110,19 @@ a.btn:hover {
   }
 
   .logo__topo_link {
-    width: var(--size-32);
-    height: var(--size-4);
+    width: 128px;
+    height: 26px;
+    background-size: contain;
+  }
+
+  .sticky .header .logo__topo_link {
+    width: 128px;
+    height: 26px;
+    background-size: contain;
+  }
+
+  .sticky .banner__slider {
+    margin-top: 80px;
   }
 
   .menu__overlay {
@@ -1185,6 +1261,11 @@ a.btn:hover {
       right;
     aspect-ratio: 16 / 9;
     background-size: cover;
+  }
+
+  .sticky header ~ main {
+    margin-top: 80px;
+    padding-top: 8px;
   }
 
   .como__funciona {
@@ -1379,7 +1460,7 @@ a.btn:hover {
 
   .faq__direita {
     align-self: center;
-    width: 100%;
+    width: var(--container-responsive);
     padding: 0 var(--size-2xl);
   }
 
@@ -1398,6 +1479,56 @@ a.btn:hover {
     padding-right: var(--size-5xl);
     font-size: var(--size-base);
     line-height: var(--size-2xl);
+  }
+
+  .titulo__breadcrumbs {
+    width: var(--container-responsive);
+    margin: 0 auto 16px auto;
+    background: url(/public/img/linha_horrizontal_black.svg);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+  }
+  .titulo__breadcrumbs h1 {
+    font-size: var(--size-5xl);
+    line-height: var(--size-5xl);
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .breadcrumbs ul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 16px;
+  }
+  .breadcrumbs ul a {
+    display: inline-block;
+    color: var(--color-brand-secundary, #111);
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: var(--font-regular);
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .breadcrumbs ul span {
+    display: block;
+    color: #727272;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: var(--font-bold);
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .titulo__breadcrumbs i {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(/public/img/icon_breadcrumb.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   footer {
@@ -1446,7 +1577,7 @@ a.btn:hover {
     gap: var(--size-xs);
     width: 100%;
     height: var(--size-5xl);
-    padding: 0 var(--size-4xl);
+    padding: 0 4px;
     font-size: var(--size-base);
     line-height: var(--size-base);
   }
