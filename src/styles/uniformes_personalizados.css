@@ -6,38 +6,14 @@
   justify-content: start;
   gap: 4px;
 }
-.voltar__topo__container {
-  display: flex;
-  justify-content: flex-end;
-  width: var(--container-lg);
-  margin: 0 auto;
-}
-.voltar__topo {
-  width: fit-content;
-  margin-top: 64px;
-  margin-bottom: 64px;
-}
-.voltar__topo:hover {
-  border-color: var(--color_black);
-}
-.voltar__topo i {
-  mask: url(/public/img/icon_ir_para_o_topo.svg) no-repeat center center;
-}
 
 @media screen and (max-width: 1300px) {
-  .uniformes__personalizados,
-  .voltar__topo__container {
+  .uniformes__personalizados {
     width: auto;
     padding: 0 8px;
   }
   .uniformes__personalizados img {
     width: 100%;
     height: auto;
-  }
-  .voltar__topo {
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 56px;
-    margin-bottom: 56px;
   }
 }

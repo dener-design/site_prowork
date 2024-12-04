@@ -1,0 +1,260 @@
+.o__que__e__prowork__express {
+  width: var(--container-lg);
+  margin: 0 auto;
+}
+
+.o__que__e__prowork__express__content h2 {
+  background: url(/public/img/zig_zag_black.svg) no-repeat left bottom;
+}
+
+.o__que__e__prowork__express strong {
+  font-weight: var(--font-bold);
+}
+.o__que__e__prowork__express__passo__a__passo {
+  max-width: 1360px;
+  margin: 40px auto 40px auto;
+  overflow: hidden;
+  color: var(--color-black);
+}
+.o__que__e__prowork__express__passo__a__passo__content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 16px;
+}
+.passso__a__passo_express h3 {
+  font-family: var(--font-display);
+  font-size: var(--size-3-5xl);
+  font-weight: var(--font-regular);
+  line-height: var(--size-5xl);
+  letter-spacing: 1px;
+}
+.passso__a__passo_express p {
+  font-family: var(--font-primary);
+  font-size: var(--size-xl);
+  font-weight: var(--font-regular);
+  line-height: var(--size-3xl);
+}
+.passso__a__passo_express strong {
+  font-weight: var(--font-bold);
+}
+
+.passso__a__passo_express {
+  background-color: blueviolet;
+  flex: 1;
+  padding: 24px;
+}
+
+.passso__a__passo_express i {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 4px solid var(--color-black);
+  margin-bottom: 16px;
+}
+
+.passso__a__passo_express.passo__1 {
+  background: var(--color-beige-light);
+}
+
+.passso__a__passo_express.passo__1 i {
+  background: url(/public/img/icon_passo_servico_01.svg) no-repeat center center;
+}
+
+.passso__a__passo_express.passo__2 {
+  background: var(--color-beige-warm);
+}
+
+.passso__a__passo_express.passo__2 i {
+  background: url(/public/img/icon_passo_servico_02.svg) no-repeat center center;
+}
+.passso__a__passo_express.passo__3 {
+  background: var(--color-beige-neutral);
+}
+
+.passso__a__passo_express.passo__3 i {
+  background: url(/public/img/icon_passo_servico_03.svg) no-repeat center center;
+}
+
+.passso__a__passo_express.passo__4 {
+  background: var(--color-beige-pink);
+}
+
+.passso__a__passo_express.passo__4 i {
+  background: url(/public/img/icon_passo_servico_04.svg) no-repeat center center;
+}
+
+.titulo__uniformes__prowork__express {
+  font-family: var(--font-display);
+  font-size: var(--size-3-5xl);
+  font-weight: var(--font-bold);
+  line-height: var(--size-4-5xl);
+  padding-bottom: 32px;
+  background: url(/public/img/zig_zag_black.svg) no-repeat left bottom;
+  margin-bottom: 40px;
+}
+
+.uniformes__prowork__express {
+  width: var(--container-xl);
+  margin: 0 auto 64px auto;
+}
+
+.uniformes__prowork__express__content {
+  width: var(--container-lg);
+  margin: 0 auto;
+}
+.uniformes__prowork__express__content__cards {
+  max-width: 1360px;
+  overflow: hidden;
+}
+.uniformes__prowork__express__content__cards__slider {
+  width: 100%;
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+}
+
+.uniformes__prowork__express__content__cards__card {
+  width: 327px;
+  position: relative;
+  cursor: pointer;
+}
+
+.uniformes__prowork__express__content__cards__card .btn {
+  opacity: 0.5;
+  width: auto;
+  transition: all 0.3s ease;
+}
+
+.uniformes__prowork__express__content__cards__card img {
+  border: 4px solid transparent;
+  border-bottom: 0;
+  display: block;
+  transition: border-color 0.3s ease;
+}
+
+.uniformes__prowork__express__content__cards__card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  background: #111 url(/public/img/icon_check.svg) no-repeat center center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.uniformes__prowork__express__content__cards__card:hover img {
+  border-color: var(--color-black);
+}
+
+.uniformes__prowork__express__content__cards__card:hover .btn {
+  opacity: 1;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.uniformes__prowork__express__content__cards__card:hover .btn i {
+  filter: brightness(0) invert(1);
+}
+
+.uniformes__prowork__express__content__cards__card:active::before {
+  opacity: 1;
+}
+
+.uniformes__prowork__express__content__cards__card:active .btn {
+  opacity: 1;
+}
+.voltar__topo {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1300px) {
+  .o__que__e__prowork__express {
+    width: var(--container-responsive);
+    padding: 0 var(--size-2xl);
+  }
+
+  .uniformes__prowork__express__content {
+    width: var(--container-responsive);
+    padding: 0 var(--size-2xl);
+  }
+
+  .o__que__e__prowork__express__content h2 {
+    font-size: var(--size-3-5xl);
+    line-height: var(--size-4-5xl);
+    padding-bottom: var(--size-base);
+    background: url(/public/img/zig_zag_black_rwd.svg) no-repeat left bottom;
+    margin-bottom: 0;
+  }
+
+  .o__que__e__prowork__express__content p {
+    font-size: var(--size-base);
+    line-height: var(--size-2xl);
+  }
+
+  .passso__a__passo_express {
+    background-color: blueviolet;
+    min-width: 240px;
+    padding: 16px;
+  }
+
+  .o__que__e__prowork__express__passo__a__passo__content {
+    width: 100%;
+    padding-left: 9px;
+  }
+  .uniformes__prowork__express {
+    width: 100%;
+    overflow: hidden;
+  }
+  .uniformes__prowork__express__content__cards {
+    width: 100%;
+    padding: 0 9px;
+    overflow-x: visible;
+    cursor: default;
+    -webkit-overflow-scrolling: auto;
+  }
+
+  .o__que__e__prowork__express__passo__a__passo__content {
+    overflow-x: visible;
+    cursor: default;
+    -webkit-overflow-scrolling: auto;
+  }
+
+  .o__que__e__prowork__express__passo__a__passo__content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    cursor: grab;
+  }
+
+  .passso__a__passo_express h3 {
+    font-size: var(--size-2xl);
+  }
+  .titulo__uniformes__prowork__express {
+    margin-bottom: 16px;
+  }
+  .uniformes__prowork__express__content__cards__slider {
+    width: 100%;
+    flex-direction: column;
+  }
+  .uniformes__prowork__express__content__cards__card {
+    width: 100%;
+  }
+  .uniformes__prowork__express__content__cards__card img {
+    width: 100%;
+    height: auto;
+  }
+  .uniformes__prowork__express {
+    margin: 0 auto 40px auto;
+  }
+}

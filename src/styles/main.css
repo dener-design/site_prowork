@@ -1100,6 +1100,23 @@ a.btn:hover {
 .subtitulos__secoes strong {
   font-weight: var(--font-bold);
 }
+.voltar__topo__container {
+  display: flex;
+  justify-content: flex-end;
+  width: var(--container-lg);
+  margin: 0 auto;
+}
+.voltar__topo {
+  width: fit-content;
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+.voltar__topo:hover {
+  border-color: var(--color_black);
+}
+.voltar__topo i {
+  mask: url(/public/img/icon_ir_para_o_topo.svg) no-repeat center center;
+}
 
 @media screen and (max-width: 1300px) {
   .header__content {
@@ -1412,13 +1429,28 @@ a.btn:hover {
 
   .blog__posts {
     width: 100%;
-    padding-left: var(--size-xs);
+    padding-left: 10px;
     overflow: hidden;
   }
 
   .blog__slider {
     gap: var(--size-base);
     margin-bottom: var(--size-6xl);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .blog__slider {
+    cursor: grab;
+  }
+
+  .blog__slider:active {
+    cursor: grabbing;
+  }
+
+  .blog__slider::-webkit-scrollbar {
+    display: none;
   }
 
   .blog__posts_item {
@@ -1585,6 +1617,21 @@ a.btn:hover {
   .btn i {
     width: var(--size-xl);
     height: var(--size-xl);
+  }
+
+  .voltar__topo__container {
+    width: auto;
+    padding: 0 8px;
+  }
+  .uniformes__personalizados img {
+    width: 100%;
+    height: auto;
+  }
+  .voltar__topo {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 56px;
+    margin-bottom: 56px;
   }
 }
 
