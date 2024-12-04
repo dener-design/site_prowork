@@ -63,7 +63,7 @@
   line-height: var(--size-xl);
 }
 .blog__conteudo__esquerda_cabecalho_data span {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .conteudo__blog {
   margin: 40px auto;
@@ -105,6 +105,148 @@ a.link__leia_mais i {
 .blog__interna {
   margin-top: 64px;
 }
+.blog__conteudo__direita {
+  width: 416px;
+}
+
+.campo__busca input {
+  background: var(--color-white) url(/public/img/icon_lupa.svg) no-repeat 95%
+    center;
+}
+
+.blog__conteudo__direita_categorias {
+  width: 95%;
+  margin: 56px auto 0;
+}
+.blog__conteudo__direita_categorias ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-transform: uppercase;
+}
+.blog__conteudo__direita_tags {
+  width: 95%;
+  margin: 56px auto;
+}
+
+.blog__conteudo__direita_tags ul {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 8px;
+
+  text-transform: uppercase;
+}
+.blog__conteudo__direita_tags ul li a {
+  display: inline-block;
+  color: var(--color-black);
+  font-family: var(--font-primary);
+  font-size: var(--size-base);
+  font-weight: var(--font-regular);
+  border: 2px solid var(--color-black);
+  padding: 8px 16px;
+}
+.blog__conteudo__direita_tags ul li a:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  opacity: inherit;
+}
+
+.blog__navegacao__container {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0 104px 0;
+}
+
+.blog__navegacao__lista {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.blog__navegacao__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-5xl);
+  height: var(--size-5xl);
+  border: 4px solid var(--color-black);
+  color: var(--color-black);
+  font-family: var(--font-primary);
+  font-size: var(--size-base);
+  font-style: normal;
+  font-weight: var(--font-regular);
+  line-height: var(--size-2xl);
+  text-transform: uppercase;
+}
+
+.blog__navegacao__link:hover {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  opacity: inherit;
+}
+.blog__navegacao__link.active {
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-color: var(--color-black);
+  opacity: 0.5;
+  cursor: default;
+}
+
+.blog__navegacao__seta.prev i {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url(/public/img/seta_prev.svg) no-repeat center center;
+}
+.blog__navegacao__seta.next i {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url(/public/img/serta_next.svg) no-repeat center center;
+}
+
+.blog__navegacao__seta.prev.active i,
+.blog__navegacao__seta.next.active i {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.barra_compartilhar {
+  width: 100%;
+  padding: 24px 0;
+  margin-top: 40px;
+  background: url(/public/img/linha_horrizontal_black.svg),
+    url(/public/img/linha_horrizontal_black.svg);
+  background-repeat: repeat-x;
+  background-position: left bottom, left top;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+}
+.barra_compartilhar .icones__compartilhar {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  text-indent: -9999px;
+  color: transparent;
+}
+.barra_compartilhar .icones__compartilhar.email {
+  background-image: url(/public/img/icon_email.svg);
+}
+.barra_compartilhar .icones__compartilhar.facebook {
+  background-image: url(/public/img/icon_facebook.svg);
+}
+.barra_compartilhar .icones__compartilhar.twitter {
+  background-image: url(/public/img/icon_x.svg);
+}
+.barra_compartilhar .icones__compartilhar.enviar {
+  background-image: url(/public/img/icon_compartilhar_via_envio.svg);
+}
+
 @media screen and (max-width: 1300px) {
   .blog__posts__interna {
     width: 100%;
@@ -112,6 +254,7 @@ a.link__leia_mais i {
   }
 
   .blog__conteudo {
+    flex-direction: column;
     width: var(--container-responsive);
   }
   .conteudo__blog {
@@ -174,9 +317,25 @@ a.link__leia_mais i {
   }
 
   .blog__interna {
-    margin-top: 16px;
+    margin-top: 56px;
   }
   .blog__cabecalho.titulo__blog_blog {
     padding: 0 var(--size-2xl);
+  }
+  .blog__conteudo__direita {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .blog__navegacao__lista li:nth-child(n + 5):not(:last-child) {
+    display: none;
+  }
+  .blog__navegacao__container {
+    margin: 48px 0;
+  }
+  .breadcrumbs span {
+    width: 180px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
