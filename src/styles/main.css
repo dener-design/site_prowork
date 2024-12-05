@@ -97,8 +97,22 @@ ol {
   min-height: 100vh;
   width: 100%;
   position: relative;
-  background: url(/public/img/img_temp_apagar.png) no-repeat top center;
+  background: url(/public/img/noise_slider.png) repeat top center;
   background-size: cover;
+}
+.slider_foto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 
 .sticky .banner__slider {
@@ -174,7 +188,8 @@ ol {
   gap: 40px;
 }
 
-.menu__overlay-links a {
+.menu__overlay-links a,
+.sticky .menu__overlay.ativo .menu__overlay-links a {
   display: flex;
   padding-bottom: 4px;
   margin-bottom: 4px;
@@ -202,7 +217,8 @@ ol {
     bottom;
 }
 
-.menu__overlay a.active {
+.menu__overlay a.active,
+.sticky .menu__overlay.ativo .menu__overlay-links a.active {
   font-weight: var(--font-bold);
   background: url(/public/img/zig_zag_horizontal_branco_menu.svg) repeat-x left
     bottom;
@@ -1117,12 +1133,32 @@ a.btn:hover {
   mask: url(/public/img/icon_ir_para_o_topo.svg) no-repeat center center;
 }
 
-form input {
+form input,
+form textarea {
   width: 100%;
   padding: 16px;
   border: 4px solid var(--color-black);
+  cursor: pointer;
 }
-form input::placeholder {
+form select {
+  width: 70%;
+  padding: 16px;
+  border: 4px solid var(--color-black);
+  appearance: none;
+  transition: all 0.3s ease;
+  background: url(/public/img/icon_menu_select.svg) no-repeat 98% center;
+  cursor: pointer;
+}
+
+form select:focus {
+  background: url(/public/img/icon_menu_select_cima.svg) no-repeat 98% center;
+}
+
+form [type="text"]::placeholder,
+form [type="email"]::placeholder,
+form [type="tel"]::placeholder,
+form [type="number"]::placeholder,
+form textarea::placeholder {
   color: var(--color-gray);
   opacity: 0.5;
 }
@@ -1152,6 +1188,43 @@ form input::placeholder {
   }
 
   .menu__overlay {
+    display: none;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+
+  .menu__overlay.ativo {
+    display: flex;
+  }
+
+  /* Desabilita o scroll da página quando o menu está aberto */
+  body.menu-aberto {
+    overflow: hidden;
+  }
+
+  .fechar__menu {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  .menu__overlay .menu__overlay-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu__overlay-social {
     display: none;
   }
 
