@@ -10,12 +10,14 @@
 .o__que__e__prowork__express strong {
   font-weight: var(--font-bold);
 }
+
 .o__que__e__prowork__express__passo__a__passo {
   max-width: 1360px;
   margin: 40px auto 40px auto;
   overflow: hidden;
   color: var(--color-black);
 }
+
 .o__que__e__prowork__express__passo__a__passo__content {
   width: 100%;
   display: flex;
@@ -23,6 +25,7 @@
   justify-content: space-around;
   gap: 16px;
 }
+
 .passso__a__passo_express h3 {
   font-family: var(--font-display);
   font-size: var(--size-3-5xl);
@@ -30,12 +33,14 @@
   line-height: var(--size-5xl);
   letter-spacing: 1px;
 }
+
 .passso__a__passo_express p {
   font-family: var(--font-primary);
   font-size: var(--size-xl);
   font-weight: var(--font-regular);
   line-height: var(--size-3xl);
 }
+
 .passso__a__passo_express strong {
   font-weight: var(--font-bold);
 }
@@ -105,10 +110,12 @@
   width: var(--container-lg);
   margin: 0 auto;
 }
+
 .uniformes__prowork__express__content__cards {
   max-width: 1360px;
   overflow: hidden;
 }
+
 .uniformes__prowork__express__content__cards__slider {
   width: 100%;
   display: flex;
@@ -169,6 +176,7 @@
 .uniformes__prowork__express__content__cards__card:active .btn {
   opacity: 1;
 }
+
 .voltar__topo {
   margin-top: 0;
 }
@@ -207,10 +215,12 @@
     width: 100%;
     padding-left: 9px;
   }
+
   .uniformes__prowork__express {
     width: 100%;
     overflow: hidden;
   }
+
   .uniformes__prowork__express__content__cards {
     width: 100%;
     padding: 0 9px;
@@ -240,20 +250,25 @@
   .passso__a__passo_express h3 {
     font-size: var(--size-2xl);
   }
+
   .titulo__uniformes__prowork__express {
     margin-bottom: 16px;
   }
+
   .uniformes__prowork__express__content__cards__slider {
     width: 100%;
     flex-direction: column;
   }
+
   .uniformes__prowork__express__content__cards__card {
     width: 100%;
   }
+
   .uniformes__prowork__express__content__cards__card img {
     width: 100%;
     height: auto;
   }
+
   .uniformes__prowork__express {
     margin: 0 auto 40px auto;
   }

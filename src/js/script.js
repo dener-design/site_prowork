@@ -47,48 +47,61 @@ window.addEventListener("resize", () => {
   }
 });
 
+// Função para verificar se estamos na página index
+function isIndexPage() {
+  return (
+    window.location.pathname === "/" ||
+    window.location.pathname === "/index.html"
+  );
+}
+
+// Somente ativa o comportamento de scroll se estiver na página index
+if (isIndexPage()) {
+  let previousScrollPosition = window.pageYOffset;
+
+  window.addEventListener("scroll", () => {
+    const currentScrollPosition = window.pageYOffset;
+
+    if (currentScrollPosition > 200) {
+      body.classList.add("sticky");
+    } else {
+      body.classList.remove("sticky");
+    }
+
+    previousScrollPosition = currentScrollPosition;
+  });
+}
+
+// Slider (mantém o comportamento atual)
 const sliderContainer = document.querySelector(".banner__slider");
-const sliderImages = Array.from(
-  sliderContainer.querySelectorAll(".slider_foto")
-);
-let currentImageIndex = 0;
-let lastTimestamp = 0;
-const interval = 4000; // Intervalo de 4 segundos entre as imagens
 
-function changeImage(timestamp) {
-  if (!lastTimestamp) lastTimestamp = timestamp;
+if (sliderContainer) {
+  const sliderImages = Array.from(
+    sliderContainer.querySelectorAll(".slider_foto")
+  );
+  let currentImageIndex = 0;
+  let lastTimestamp = 0;
+  const interval = 3000;
 
-  if (timestamp - lastTimestamp >= interval) {
-    sliderImages.forEach((image, index) => {
-      image.style.opacity = index === currentImageIndex ? 1 : 0;
-    });
+  function changeImage(timestamp) {
+    if (!lastTimestamp) lastTimestamp = timestamp;
 
-    currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
-    lastTimestamp = timestamp;
+    if (timestamp - lastTimestamp >= interval) {
+      sliderImages.forEach((image, index) => {
+        image.style.opacity = index === currentImageIndex ? 1 : 0;
+      });
+
+      currentImageIndex = (currentImageIndex + 1) % sliderImages.length;
+      lastTimestamp = timestamp;
+    }
+
+    requestAnimationFrame(changeImage);
   }
+
+  sliderImages.forEach((image, index) => {
+    image.style.opacity = index === 0 ? 1 : 0;
+    image.style.transition = "opacity 1s ease-in-out";
+  });
 
   requestAnimationFrame(changeImage);
 }
-
-// Inicializa o slider com a primeira imagem visível
-sliderImages.forEach((image, index) => {
-  image.style.opacity = index === 0 ? 1 : 0;
-  image.style.transition = "opacity 1s ease-in-out"; // Adiciona transição suave
-});
-
-// Inicia o loop do slider
-requestAnimationFrame(changeImage);
-
-let previousScrollPosition = window.pageYOffset;
-
-window.addEventListener("scroll", () => {
-  const currentScrollPosition = window.pageYOffset;
-
-  if (currentScrollPosition > 200) {
-    body.classList.add("sticky");
-  } else {
-    body.classList.remove("sticky");
-  }
-
-  previousScrollPosition = currentScrollPosition;
-});

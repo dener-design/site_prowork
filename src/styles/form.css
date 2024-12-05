@@ -1,6 +1,7 @@
 .faq {
   margin-top: 104px;
 }
+
 .formulario__de__contato {
   display: flex;
   flex-direction: row;
@@ -8,14 +9,17 @@
   width: var(--container-lg);
   margin: 0 auto;
 }
+
 .formulario__de__contato input[type="tel"] {
   width: 70%;
 }
+
 .formulario__de__contato__campos form {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
 .formulario__de__contato__campos .btn_secondary {
   align-self: flex-end;
   cursor: pointer;
@@ -28,9 +32,11 @@
 .titulo__formulario {
   margin-bottom: 64px;
 }
+
 .msg__suporte {
   display: none;
 }
+
 .titulo__formulario h2 {
   margin-bottom: 8px;
   color: var(--color-black);
@@ -39,6 +45,7 @@
   font-weight: var(--font-bold);
   line-height: var(--size-4-5xl);
 }
+
 .titulo__formulario p {
   color: var(--color-black);
   font-family: var(--font-primary);
@@ -50,6 +57,7 @@
 .erro__campo .mensagem__erro {
   border-color: var(--color-red);
 }
+
 label {
   display: block;
   margin-bottom: 8px;
@@ -62,19 +70,23 @@ label {
   letter-spacing: 1px;
   cursor: pointer;
 }
+
 label.obrigatorio:after {
   content: " *";
   color: var(--color-red);
 }
+
 .erro__campo .msg__suporte {
   display: block;
   font-weight: var(--font-bold);
   color: var(--color-red);
   margin-bottom: 16px;
 }
+
 .formulario__de__contato_direita {
   width: 33%;
 }
+
 .formulario__de__contato_direita h3 {
   margin-bottom: 24px;
   color: var(--color-black);
@@ -84,6 +96,7 @@ label.obrigatorio:after {
   line-height: var(--size-5xl);
   letter-spacing: 1px;
 }
+
 .formulario__de__contato_direita .link__whatsapp_contato {
   display: flex;
   align-items: center;
@@ -97,6 +110,7 @@ label.obrigatorio:after {
   text-decoration: none;
   -webkit-text-decoration: none;
 }
+
 .formulario__de__contato_direita .link__whatsapp_contato i {
   mask: url(/public/img/icon_whatsapp.svg);
   mask-size: contain;
@@ -122,24 +136,30 @@ label.obrigatorio:after {
   color: transparent;
   margin-bottom: -4px;
 }
+
 .endereco__lateral {
   margin-top: 56px;
 }
+
 .icones-mapas {
   display: flex;
   gap: 16px;
   margin-top: 24px;
 }
+
 .imagem__mapa {
   margin-top: 24px;
 }
+
 .imagem__mapa a {
   display: block;
 }
+
 .imagem__mapa img {
   width: 100%;
   height: auto;
 }
+
 .sucesso_envio {
   display: flex;
   flex-direction: column;
@@ -155,6 +175,7 @@ label.obrigatorio:after {
   line-height: var(--size-7xl);
   margin-bottom: 8px;
 }
+
 .sucesso_envio__texto.msg_1 {
   width: 70%;
   font-family: var(--font-primary);
@@ -162,6 +183,7 @@ label.obrigatorio:after {
   font-weight: var(--font-bold);
   line-height: var(--size-4-5xl);
 }
+
 .sucesso_envio__texto.msg_2 {
   margin: 32px 0;
   width: 100%;
@@ -190,9 +212,11 @@ label.obrigatorio:after {
     flex-direction: column;
     margin: 0 auto;
   }
+
   .formulario__de__contato_direita {
     width: 100%;
   }
+
   .telefone__lateral {
     margin-top: 64px;
   }
@@ -201,10 +225,12 @@ label.obrigatorio:after {
     font-size: var(--size-2xl);
     line-height: var(--size-28);
   }
+
   .titulo__formulario p {
     font-size: var(--size-base);
     line-height: var(--size-2xl);
   }
+
   .titulo__formulario {
     margin-bottom: 24px;
   }
@@ -213,11 +239,13 @@ label.obrigatorio:after {
     font-size: var(--size-5xl);
     line-height: var(--size-7xl);
   }
+
   .sucesso_envio__texto.msg_1 {
     width: 100%;
     font-size: var(--size-2xl);
     line-height: var(--size-3xl);
   }
+
   .sucesso_envio__texto.msg_2 {
     margin: 16px 0;
     width: 100%;

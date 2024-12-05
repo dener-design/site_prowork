@@ -340,6 +340,7 @@ a.link__leia_mais i {
     font-size: var(--size-base);
     line-height: var(--size-xl);
   }
+
   .blog__conteudo__esquerda_cabecalho_data {
     margin-bottom: 24px;
   }
