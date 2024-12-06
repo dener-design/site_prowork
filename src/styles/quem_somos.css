@@ -2,7 +2,7 @@
   width: var(--container-lg);
   margin: 0 auto;
   display: flex;
-  gap: 64px;
+  gap: 4rem;
 }
 
 .quem__somos__internas .quem__somos__esquerda {
@@ -39,8 +39,8 @@
 
 .div__video__apesentacao {
   width: var(--container-lg);
-  height: 280px;
-  margin: 64px auto;
+  height: 17.5rem;
+  margin: 4rem auto;
   position: relative;
   background: url(data:image/png;base64,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),
     url(/public/img/video_apresentacao-mini.gif);
@@ -62,7 +62,7 @@
 .nosso__processo {
   width: var(--container-lg);
   margin: 0 auto;
-  padding-left: 40px;
+  padding-left: 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,23 +98,23 @@
 
 .passo_a_passo_processo_passo span {
   display: flex;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
-  border: 4px solid var(--color-black);
+  border: 0.25rem solid var(--color-black);
   text-indent: -9999px;
   color: transparent;
   margin-bottom: var(--size-4-5xl);
 }
 
 .passo_a_passo_processo_passo h2 {
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
   font-family: var(--font-display);
   font-size: var(--size-3-5xl);
   font-style: normal;
   font-weight: var(--font-regular);
   line-height: var(--size-5xl);
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
 }
 
 .passo_a_passo_processo_passo p {
@@ -126,7 +126,7 @@
 }
 
 .passo_a_passo_processo_passo p:nth-child(4) {
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 .passo_01 {
@@ -158,16 +158,16 @@
   margin: var(--size-7xl) auto 0 auto;
   display: flex;
   flex-direction: row;
-  gap: 64px;
+  gap: 4rem;
 }
 
 .tecidos__prowork_esquerda {
-  width: 536px;
+  width: 33.5rem;
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
+  padding-left: 2.5rem;
   justify-content: space-between;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .tecidos__prowork_esquerda p {
@@ -201,15 +201,15 @@
 }
 
 .tecidos__prowork_direita {
-  width: 680px;
+  width: 42.5rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 .tecidos__prowork_direita img {
   display: inline-block;
-  width: 340px;
-  height: 268px;
+  width: 21.25rem;
+  height: 16.75rem;
 }
 
 @media screen and (max-width: 1300px) {
@@ -246,8 +246,8 @@
 
   .div__video__apesentacao {
     width: var(--container-responsive);
-    height: 180px;
-    margin: var(--size-base) auto 56px auto;
+    height: 11.25rem;
+    margin: var(--size-base) auto 3.5rem auto;
   }
 
   .nosso__processo {
@@ -284,7 +284,7 @@
 
   .passo_a_passo_processo {
     width: var(--container-responsive);
-    margin: 16px auto 0 auto;
+    margin: 1rem auto 0 auto;
     display: flex;
     flex-direction: column;
     gap: var(--size-base);
@@ -299,7 +299,7 @@
   }
 
   .passo_a_passo_processo_passo h2 {
-    margin-bottom: 8px;
+    margin-bottom: 0.5rem;
     font-size: var(--size-2xl);
     line-height: var(--size-3-5xl);
   }
@@ -344,7 +344,7 @@
 
   .tecidos__prowork_esquerda .btn {
     width: 100%;
-    padding: 0 8px;
+    padding: 0 0.5rem;
   }
 
   .tecidos__prowork_direita {
@@ -355,7 +355,7 @@
   }
 
   .tecidos__prowork_direita img {
-    width: 139px;
-    height: 139px;
+    width: 8.6875rem;
+    height: 8.6875rem;
   }
 }

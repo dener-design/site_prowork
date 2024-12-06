@@ -1,53 +1,46 @@
-// Selecionando os elementos necessários
 const exibirMenuBtn = document.querySelector(".exibir__menu");
 const fecharMenuBtn = document.querySelector(".fechar__menu");
 const menuOverlay = document.querySelector(".menu__overlay");
 const menuLinks = document.querySelectorAll(".menu__overlay-links a");
 const body = document.body;
 
-// Função para exibir o menu (adiciona a classe 'ativo' e desabilita o scroll)
 function exibirMenu() {
   if (window.innerWidth < 1300) {
     menuOverlay.classList.add("ativo");
-    body.style.overflow = "hidden"; // Desabilita o scroll
+    body.style.overflow = "hidden";
   }
 }
 
-// Função para fechar o menu (remove a classe 'ativo' e habilita o scroll)
 function fecharMenu() {
   if (window.innerWidth < 1300) {
     menuOverlay.classList.remove("ativo");
-    body.style.overflow = ""; // Restaura o scroll
+    body.style.overflow = "";
   }
 }
 
-// Event listeners para abrir e fechar o menu
 exibirMenuBtn.addEventListener("click", (e) => {
-  e.preventDefault(); // Evitar comportamento padrão do link
+  e.preventDefault();
   exibirMenu();
 });
 
 fecharMenuBtn.addEventListener("click", (e) => {
-  e.preventDefault(); // Evitar comportamento padrão do link
+  e.preventDefault();
   fecharMenu();
 });
 
-// Fechar o menu quando clicar em qualquer link do menu
 menuLinks.forEach((link) => {
   link.addEventListener("click", () => {
     fecharMenu();
   });
 });
 
-// Garantir que o menu volte ao estado correto no resize da tela
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 1300) {
     menuOverlay.classList.remove("ativo");
-    body.style.overflow = ""; // Restaura o scroll
+    body.style.overflow = "";
   }
 });
 
-// Função para verificar se estamos na página index
 function isIndexPage() {
   return (
     window.location.pathname === "/" ||
@@ -55,7 +48,6 @@ function isIndexPage() {
   );
 }
 
-// Somente ativa o comportamento de scroll se estiver na página index
 if (isIndexPage()) {
   let previousScrollPosition = window.pageYOffset;
 
@@ -72,7 +64,6 @@ if (isIndexPage()) {
   });
 }
 
-// Slider (mantém o comportamento atual)
 const sliderContainer = document.querySelector(".banner__slider");
 
 if (sliderContainer) {

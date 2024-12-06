@@ -1,16 +1,17 @@
 .uniformes__personalizados {
-  width: var(--container-lg);
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  gap: 4px;
+  width: var(--container-lg);
+  margin: 0 auto;
+  gap: 0.25rem;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 81.25rem) {
   .uniformes__personalizados {
+    display: flex;
     width: auto;
-    padding: 0 8px;
+    padding: 0 0.5rem;
   }
 
   .uniformes__personalizados img {
