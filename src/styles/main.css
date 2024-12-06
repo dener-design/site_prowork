@@ -7,7 +7,7 @@
 }
 
 html {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 img,
@@ -100,7 +100,6 @@ ol {
   background: url(/public/img/noise_slider.png) repeat top center;
   background-size: cover;
 }
-
 .slider_foto {
   position: absolute;
   top: 0;
@@ -117,14 +116,14 @@ ol {
 }
 
 .sticky .banner__slider {
-  margin-top: 8.125rem;
+  margin-top: 130px;
 }
 
 .banner__slider::before {
   content: "";
   display: block;
   width: 100%;
-  height: 0.8125rem;
+  height: 13px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -154,7 +153,7 @@ ol {
 .header__content {
   width: var(--container-lg);
   margin: 0 auto;
-  min-height: 8.125rem;
+  min-height: 130px;
   display: flex;
   align-items: center;
 }
@@ -163,7 +162,7 @@ ol {
   display: block;
   width: 12rem;
   height: 1.5rem;
-  text-indent: -624.9rem;
+  text-indent: -9999px;
   color: transparent;
   background: url(/public/img/logo_prowork.svg) no-repeat center center;
   background-size: cover;
@@ -186,20 +185,20 @@ ol {
 
 .menu__overlay-links {
   display: flex;
-  gap: 2.5rem;
+  gap: 40px;
 }
 
 .menu__overlay-links a,
 .sticky .menu__overlay.ativo .menu__overlay-links a {
   display: flex;
-  padding-bottom: 0.25rem;
-  margin-bottom: 0.25rem;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
   color: var(--color-white);
   font-family: var(--font-primary);
   font-size: var(--size-xl);
   font-weight: var(--weight-regular);
   line-height: var(--size-3xl);
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -242,9 +241,9 @@ ol {
   mask-size: cover;
   background: var(--color-white);
   -webkit-mask-size: cover;
-  width: 1.5rem;
-  height: 1.5rem;
-  text-indent: -624.9rem;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
   color: transparent;
 }
 
@@ -266,9 +265,9 @@ ol {
 
 .fechar__menu {
   display: none;
-  width: 3rem;
-  height: 3rem;
-  text-indent: -624.9rem;
+  width: 48px;
+  height: 48px;
+  text-indent: -9999px;
   color: transparent;
   background: url(/public/img/icon_fechar_menu.svg) no-repeat center center;
   background-size: cover;
@@ -276,9 +275,9 @@ ol {
 
 .exibir__menu {
   display: none;
-  width: 2rem;
-  height: 2rem;
-  text-indent: -624.9rem;
+  width: 32px;
+  height: 32px;
+  text-indent: -9999px;
   color: transparent;
   mask: url(/public/img/icon_menu.svg);
   mask-size: cover;
@@ -302,7 +301,7 @@ ol {
 .hero {
   display: flex;
   align-items: center;
-  min-height: calc(100vh - 15.5rem);
+  min-height: calc(100vh - 248px);
 }
 
 .hero__content {
@@ -312,12 +311,12 @@ ol {
 }
 
 .hero__content .titulo__display {
-  width: 39.5rem;
+  width: 632px;
 }
 
 .hero__content .titulo__display_paragrafo {
   padding-top: var(--size-xs);
-  width: 24.81rem;
+  width: 397px;
 }
 
 .contato__topo {
@@ -329,7 +328,7 @@ ol {
 }
 
 .link__whatsapp_topo {
-  width: 18rem;
+  width: 288px;
   text-align: center;
 }
 
@@ -337,7 +336,7 @@ ol {
   margin: var(--size-2xl) auto 0;
   position: relative;
   width: var(--container-xl);
-  min-height: 34.5rem;
+  min-height: 552px;
   background: url(/public/img/foto_hero_1x.webp) no-repeat center center;
   background-size: cover;
   background-position: top center;
@@ -403,7 +402,7 @@ ol {
   display: flex;
   flex-direction: row;
   width: var(--container-xl);
-  margin: 2.5rem auto;
+  margin: 40px auto;
 }
 
 .chamada__sobre__a__empresa__esquerda h2 {
@@ -415,7 +414,7 @@ ol {
 }
 
 .chamada__sobre__a__empresa__esquerda p {
-  width: 32rem;
+  width: 512px;
   margin-left: var(--size-9xl);
 }
 
@@ -436,21 +435,21 @@ ol {
   right: var(--size-4-5xl);
   bottom: var(--size-4-5xl);
   display: block;
-  width: 13.25rem;
+  width: 212px;
   height: var(--size-xl);
   background: url(/public/img/zig_zag_black.svg) no-repeat left bottom;
 }
 
 .sticky header ~ main {
-  margin-top: 8.125rem;
-  padding-top: 1rem;
+  margin-top: 130px;
+  padding-top: 16px;
 }
 
 .como__funciona {
   display: flex;
   flex-direction: row;
   width: var(--container-xl);
-  height: 34.5rem;
+  height: 552px;
   margin: 0 auto;
   background: var(--color-brown) url(/public/img/bg_quem_somos_vertical.png);
   color: var(--color-white);
@@ -470,14 +469,13 @@ ol {
 }
 
 .como__funciona__esquerda p {
-  width: 22.69rem;
-  margin-bottom: 4rem;
+  width: 363px;
+  margin-bottom: 64px;
 }
 
 .como__funciona__direita {
-  background: url(/public/img/zig_zag_vertical_branco_secao.svg) repeat-y 3.5rem
-    0;
-  padding-left: 9rem;
+  background: url(/public/img/zig_zag_vertical_branco_secao.svg) repeat-y 56px 0;
+  padding-left: 144px;
   display: flex;
   flex-direction: column;
   gap: var(--size-5xl);
@@ -490,11 +488,11 @@ ol {
   font-style: normal;
   font-weight: var(--font-regular);
   line-height: var(--size-4xl);
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
 }
 
 .como__funciona__direita__content p {
-  width: 31.25rem;
+  width: 500px;
   font-family: var(--font-primary);
   font-size: var(--size-base);
   font-weight: var(--font-regular);
@@ -502,8 +500,8 @@ ol {
 }
 
 .clientes__prowork {
-  max-width: 85rem;
-  margin: 6.5rem auto;
+  max-width: 1360px;
+  margin: 104px auto;
 }
 
 .clientes__prowork_cabecalho {
@@ -548,8 +546,8 @@ ol {
 
 .clientes__prowork_depoimentos_item img {
   margin-bottom: var(--size-base);
-  padding: 0.25rem;
-  border: 0.25rem solid var(--color-black);
+  padding: 4px;
+  border: 4px solid var(--color-black);
 }
 
 .clientes__prowork_depoimentos_item h3 {
@@ -559,12 +557,12 @@ ol {
   font-size: var(--size-4xl);
   font-weight: var(--font-regular);
   line-height: var(--size-6xl);
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
 }
 
 .clientes__prowork_depoimentos_item p {
-  width: 20.12rem;
-  margin-left: 5.5rem;
+  width: 322px;
+  margin-left: 88px;
   color: var(--color-gray);
   font-family: var(--font-sans);
   font-size: var(--size-base);
@@ -585,8 +583,8 @@ ol {
   display: block;
   width: var(--size-2xl);
   height: var(--size-2xl);
-  border: 0.25rem solid #11111162;
-  text-indent: -624.9rem;
+  border: 4px solid #11111162;
+  text-indent: -9999px;
   color: transparent;
 }
 
@@ -602,32 +600,32 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
 }
 
 .blog__cabecalho {
-  padding-left: 5rem;
-  max-width: 85rem;
+  padding-left: 80px;
+  max-width: 1360px;
   margin: 0 auto;
 }
 
 .blog__posts {
-  max-width: 85rem;
+  max-width: 1360px;
   margin: 0 auto;
 }
 
 .blog__slider {
   margin-top: var(--size-4-5xl);
-  margin-bottom: 6.5rem;
+  margin-bottom: 104px;
   display: flex;
   flex-direction: row;
 }
 
 .blog__posts_item {
   flex: 1;
-  border-top: 0.25rem solid var(--color-black);
-  border-bottom: 0.25rem solid var(--color-black);
+  border-top: 4px solid var(--color-black);
+  border-bottom: 4px solid var(--color-black);
 }
 
 .blog__posts_item:first-child,
 .blog__posts_item:last-child {
-  border: 0.25rem solid var(--color-black);
+  border: 4px solid var(--color-black);
 }
 
 .blog__posts_item:nth-child(2) {
@@ -637,11 +635,11 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
 
 .blog__posts_item img {
   width: 100%;
-  height: 28.5rem;
+  height: 456px;
 }
 
 .blog__posts_item h3 {
-  padding: 2rem;
+  padding: 32px;
   font-family: var(--font-display);
   font-size: var(--size-2xl);
   font-weight: var(--font-regular);
@@ -649,7 +647,7 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
 }
 
 .blog__posts_item p {
-  padding: 0 2rem 2rem;
+  padding: 0 32px 32px;
   color: var(--color-gray);
   font-family: var(--font-primary);
   font-size: var(--size-base);
@@ -663,14 +661,13 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
   flex-direction: row;
   padding: 0 var(--size-4-5xl) 0 var(--size-9xl);
   max-width: var(--container-xl);
-  margin: 0 auto 6.5rem;
+  margin: 0 auto 104px;
 }
 
 .faq__direita {
   align-self: center;
   width: 50%;
 }
-
 .faq__direita p {
   width: 80%;
 }
@@ -684,7 +681,7 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
 }
 
 .faq__esquerda details {
-  border-bottom: 0.25rem solid var(--color-black);
+  border-bottom: 4px solid var(--color-black);
 }
 
 .faq__esquerda details summary {
@@ -710,8 +707,8 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
   font-size: var(--size-2xl);
   font-style: normal;
   font-weight: 400;
-  line-height: 28.5rem;
-  padding-left: 0.5rem;
+  line-height: 28.8px;
+  padding-left: 8px;
 }
 
 .faq__esquerda details summary::before {
@@ -721,8 +718,8 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
   right: var(--size-base);
   top: 50%;
   transform: translateY(-50%);
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   background-image: url(/public/img/icon_open.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -741,64 +738,58 @@ a.clientes__prowork_depoimentos_controle_item_link.disabled {
   font-style: normal;
   font-weight: var(--font-regular);
   line-height: var(--size-2xl);
-  padding: 0 2rem 2rem 4rem;
+  padding: 0 32px 32px 64px;
 }
 
 .titulo__breadcrumbs {
   width: var(--container-lg);
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 64px auto;
   background: url(/public/img/linha_horrizontal_black.svg);
   background-repeat: repeat-x;
   background-position: left bottom;
 }
-
 .titulo__breadcrumbs h1 {
   padding-top: var(--size-4-5xl);
   padding-bottom: var(--size-4-5xl);
 }
-
 .breadcrumbs ul {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding-bottom: 1rem;
+  gap: 8px;
+  padding-bottom: 16px;
 }
-
 .breadcrumbs ul a {
   display: inline-block;
   color: var(--color-brand-secundary, #111);
   font-family: var(--font-primary);
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: var(--font-regular);
-  line-height: 1.5rem;
-  letter-spacing: 0.0625rem;
+  line-height: 24px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 .breadcrumbs ul span {
   display: block;
   color: #727272;
   font-family: var(--font-primary);
-  font-size: 1rem;
+  font-size: 16px;
   font-style: normal;
   font-weight: var(--font-bold);
-  line-height: 1.5rem;
-  letter-spacing: 0.0625rem;
+  line-height: 24px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
-
 .titulo__breadcrumbs i {
   display: block;
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 20px;
+  height: 20px;
   background: url(/public/img/icon_breadcrumb.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 footer {
-  padding: 6.5rem 0;
+  padding: 104px 0;
   background: var(--color-black)
     url(/public/img/triangulos_horizontal_footer.svg);
   background-repeat: repeat-x;
@@ -820,9 +811,9 @@ footer {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
-  width: 8rem;
-  height: 1rem;
-  text-indent: -624.9rem;
+  width: 128px;
+  height: 16px;
+  text-indent: -9999px;
   color: transparent;
 }
 
@@ -836,9 +827,9 @@ footer {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  width: 1.5rem;
-  height: 1.5rem;
-  text-indent: -624.9rem;
+  width: 24px;
+  height: 24px;
+  text-indent: -9999px;
   color: transparent;
 }
 
@@ -856,7 +847,7 @@ footer {
   flex-direction: row;
   width: var(--container-lg);
   margin: 0 auto;
-  padding-left: 9.5rem;
+  padding-left: 152px;
   padding-top: var(--size-8xl);
 }
 
@@ -866,12 +857,12 @@ footer {
 }
 
 .footer__conteudo__direita nav ul li a {
-  padding-bottom: 0.25rem;
+  padding-bottom: 4px;
   font-family: var(--font-primary);
   font-size: var(--size-xl);
   font-weight: var(--font-regular);
   line-height: var(--size-2xl);
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -910,7 +901,6 @@ footer {
 .footer__conteudo__esquerda {
   width: 30%;
 }
-
 .footer__conteudo__esquerda address a::after {
   content: "";
   display: inline-block;
@@ -918,18 +908,18 @@ footer {
   background-size: contain;
   background-position: left bottom;
   background-repeat: no-repeat;
-  margin-left: 0.25rem;
-  width: 1.25rem;
-  height: 1.25rem;
-  text-indent: -624.9rem;
+  margin-left: 4px;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
   color: transparent;
-  margin-bottom: -0.25rem;
+  margin-bottom: -4px;
 }
 
 .footer__copyright {
   width: var(--container-lg);
   margin: 0 auto;
-  padding-top: 6.5rem;
+  padding-top: 104px;
   padding-bottom: var(--size-5xl);
   font-family: var(--font-primary);
   font-size: var(--size-base);
@@ -946,7 +936,7 @@ footer {
 
 .footer__rodape p {
   font-family: var(--font-primary);
-  font-size: 0.625rem;
+  font-size: 10px;
   font-weight: var(--font-regular);
 }
 
@@ -956,9 +946,9 @@ footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 4rem;
-  height: 1.125rem;
-  text-indent: -624.9rem;
+  width: 64px;
+  height: 18px;
+  text-indent: -9999px;
   color: transparent;
 }
 
@@ -982,7 +972,7 @@ footer {
   font-size: var(--size-2xl);
   font-weight: var(--font-regular);
   line-height: var(--size-3xl);
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
 }
 
 .scroll-downs {
@@ -991,18 +981,18 @@ footer {
 }
 
 .mousey {
-  width: 0.1875rem;
-  padding: 0.625rem 0.9375rem;
-  height: 1.875rem;
-  border: 0.125rem solid #fff;
-  border-radius: 1.562rem;
+  width: 3px;
+  padding: 10px 15px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
 }
 
 .scroller {
-  width: 0.1875rem;
-  height: 0.625rem;
+  width: 3px;
+  height: 10px;
   border-radius: 25%;
   background-color: #fff;
   animation-name: scroll;
@@ -1022,7 +1012,7 @@ footer {
   }
 
   100% {
-    transform: translateY(0.9375rem);
+    transform: translateY(15px);
     opacity: 0;
   }
 }
@@ -1032,16 +1022,16 @@ footer {
   align-items: center;
   justify-content: center;
   gap: var(--size-base);
-  width: 18rem;
-  height: 3.5rem;
+  width: 288px;
+  height: 56px;
   padding: 0 var(--size-4xl);
   font-family: var(--font-primary);
   font-size: var(--size-2xl);
   font-weight: var(--font-bold);
   line-height: var(--size-2xl);
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  border: 0.25rem solid transparent;
+  border: 4px solid transparent;
   transition: all 0.3s ease;
 }
 
@@ -1051,8 +1041,8 @@ a.btn:hover {
 
 .btn i {
   display: block;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 24px;
+  height: 24px;
   mask: url(/public/img/icon_whatsapp.svg);
   mask-size: cover;
   mask-position: center;
@@ -1099,7 +1089,6 @@ a.btn:hover {
   background: var(--color-black);
   color: var(--color-white);
 }
-
 .titulo__paginas__internas {
   color: var(--color-black);
   font-family: var(--font-display);
@@ -1107,7 +1096,6 @@ a.btn:hover {
   font-weight: var(--font-regular);
   line-height: var(--size-8xl);
 }
-
 .titulo__secoes {
   padding-bottom: var(--size-2xl);
   font-family: var(--font-display);
@@ -1127,24 +1115,20 @@ a.btn:hover {
 .subtitulos__secoes strong {
   font-weight: var(--font-bold);
 }
-
 .voltar__topo__container {
   display: flex;
   justify-content: flex-end;
   width: var(--container-lg);
   margin: 0 auto;
 }
-
 .voltar__topo {
   width: fit-content;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
-
 .voltar__topo:hover {
   border-color: var(--color_black);
 }
-
 .voltar__topo i {
   mask: url(/public/img/icon_ir_para_o_topo.svg) no-repeat center center;
 }
@@ -1152,15 +1136,14 @@ a.btn:hover {
 form input,
 form textarea {
   width: 100%;
-  padding: 1rem;
-  border: 0.25rem solid var(--color-black);
+  padding: 16px;
+  border: 4px solid var(--color-black);
   cursor: pointer;
 }
-
 form select {
   width: 70%;
-  padding: 1rem;
-  border: 0.25rem solid var(--color-black);
+  padding: 16px;
+  border: 4px solid var(--color-black);
   appearance: none;
   transition: all 0.3s ease;
   background: url(/public/img/icon_menu_select.svg) no-repeat 98% center;
@@ -1180,28 +1163,28 @@ form textarea::placeholder {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 81.25rem) {
+@media screen and (max-width: 1300px) {
   .header__content {
     display: flex;
     justify-content: space-between;
     width: var(--container-responsive);
-    min-height: 5rem;
+    min-height: 80px;
   }
 
   .logo__topo_link {
-    width: 8rem;
-    height: 1.625rem;
+    width: 128px;
+    height: 26px;
     background-size: contain;
   }
 
   .sticky .header .logo__topo_link {
-    width: 8rem;
-    height: 1.625rem;
+    width: 128px;
+    height: 26px;
     background-size: contain;
   }
 
   .sticky .banner__slider {
-    margin-top: 5rem;
+    margin-top: 80px;
   }
 
   .menu__overlay {
@@ -1232,17 +1215,15 @@ form textarea::placeholder {
   .fechar__menu {
     display: block;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 16px;
+    right: 16px;
   }
-
   .menu__overlay .menu__overlay-nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .menu__overlay-social {
     display: none;
   }
@@ -1261,7 +1242,7 @@ form textarea::placeholder {
   }
 
   .hero {
-    min-height: calc(100vh - 14.5rem);
+    min-height: calc(100vh - 232px);
   }
 
   .hero__content {
@@ -1270,19 +1251,19 @@ form textarea::placeholder {
   }
 
   .hero__content .titulo__display {
-    width: 19.5rem;
-    text-shadow: 0.0625rem 0.0625rem 3.4375rem #111f;
+    width: 312px;
+    text-shadow: 1px 1px 3.7px #111f;
     font-family: var(--font-display);
     font-size: var(--size-4xl);
     font-weight: var(--font-regular);
-    line-height: 2.5rem;
-    letter-spacing: 1.125rem;
+    line-height: 40px;
+    letter-spacing: 1.2px;
   }
 
   .hero__content .titulo__display_paragrafo {
     padding-top: var(--size-xs);
-    width: 19.5rem;
-    text-shadow: 0.0625rem 0.0625rem 3.4375rem #11111152;
+    width: 312px;
+    text-shadow: 1px 1px 3.7px #11111152;
     font-family: var(--font-base);
     font-size: var(--size-base);
     font-style: normal;
@@ -1307,7 +1288,7 @@ form textarea::placeholder {
   .link__whatsapp_topo {
     width: 100%;
     text-align: center;
-    text-shadow: 0 0.25rem 0.25rem #00000040;
+    text-shadow: 0 4px 4px #00000040;
     font-family: var(--font-display);
     font-size: var(--size-3-5xl);
     font-style: normal;
@@ -1318,7 +1299,7 @@ form textarea::placeholder {
   .chamada__principal {
     margin-top: var(--size-xs);
     width: var(--container-responsive);
-    min-height: 16rem;
+    min-height: 256px;
   }
 
   .chamada__principal a {
@@ -1374,7 +1355,7 @@ form textarea::placeholder {
   .chamada__sobre__a__empresa__direita {
     position: relative;
     width: 100%;
-    min-height: 21.62rem;
+    min-height: 346px;
     background: url(/public/img/foto_quem_somos_prowork_1x.webp) no-repeat top
       right;
     aspect-ratio: 16 / 9;
@@ -1382,8 +1363,8 @@ form textarea::placeholder {
   }
 
   .sticky header ~ main {
-    margin-top: 5rem;
-    padding-top: 0.5rem;
+    margin-top: 80px;
+    padding-top: 8px;
   }
 
   .como__funciona {
@@ -1397,7 +1378,7 @@ form textarea::placeholder {
     content: "";
     display: block;
     width: 100%;
-    height: 7.25rem;
+    height: 116px;
     background: url(/public/img/bg_quem_somos_horizontal_1x.webp);
     background-repeat: no-repeat;
     background-position: left top;
@@ -1426,7 +1407,7 @@ form textarea::placeholder {
 
   .como__funciona__direita {
     background: url(/public/img/zig_zag_vertical_branco_secao_rwd.svg) repeat-x
-      3.5rem 0;
+      56px 0;
     padding: var(--size-7xl) var(--size-3-5xl) var(--size-3-5xl);
     display: flex;
     flex-direction: column;
@@ -1440,7 +1421,7 @@ form textarea::placeholder {
     font-style: normal;
     font-weight: var(--font-regular);
     line-height: var(--size-4xl);
-    letter-spacing: 0.0625rem;
+    letter-spacing: 1px;
   }
 
   .como__funciona__direita__content p {
@@ -1456,7 +1437,6 @@ form textarea::placeholder {
     margin: var(--size-6xl) auto;
     padding: 0 var(--size-2xl);
   }
-
   .clientes__prowork_cabecalho {
     padding-left: 0;
   }
@@ -1493,8 +1473,8 @@ form textarea::placeholder {
   }
 
   .clientes__prowork_logo img {
-    width: 9rem;
-    height: 7.5rem;
+    width: 144px;
+    height: 120px;
   }
 
   .clientes__prowork_depoimentos {
@@ -1531,7 +1511,7 @@ form textarea::placeholder {
 
   .blog__posts {
     width: 100%;
-    padding-left: 0.625rem;
+    padding-left: 10px;
     overflow: hidden;
   }
 
@@ -1556,28 +1536,28 @@ form textarea::placeholder {
   }
 
   .blog__posts_item {
-    width: 16rem;
+    width: 256px;
     flex: content;
   }
 
   .blog__posts_item img {
     width: 100%;
-    height: 16rem;
+    height: 256px;
   }
 
   .blog__posts_item h3 {
-    width: 16rem;
+    width: 256px;
     padding: var(--size-2xl);
   }
 
   .blog__posts_item p {
-    width: 16rem;
+    width: 256px;
     padding: var(--size-2xl);
   }
 
   .blog__posts_item:nth-child(2) {
-    border-left: 0.25rem solid var(--color-black);
-    border-right: 0.25rem solid var(--color-black);
+    border-left: 4px solid var(--color-black);
+    border-right: 4px solid var(--color-black);
   }
 
   .blog__cabecalho {
@@ -1617,54 +1597,49 @@ form textarea::placeholder {
 
   .titulo__breadcrumbs {
     width: var(--container-responsive);
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 16px auto;
     background: url(/public/img/linha_horrizontal_black.svg);
     background-repeat: repeat-x;
     background-position: left bottom;
   }
-
   .titulo__breadcrumbs h1 {
     font-size: var(--size-5xl);
     line-height: var(--size-5xl);
-    padding-top: 1rem;
-    padding-bottom: 1.5rem;
+    padding-top: 16px;
+    padding-bottom: 24px;
   }
-
   .breadcrumbs ul {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 1rem;
+    gap: 8px;
+    padding-bottom: 16px;
   }
-
   .breadcrumbs ul a {
     display: inline-block;
     color: var(--color-brand-secundary, #111);
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: var(--font-regular);
-    line-height: 1.5rem;
-    letter-spacing: 0.0625rem;
+    line-height: 24px;
+    letter-spacing: 1px;
     text-transform: uppercase;
   }
-
   .breadcrumbs ul span {
     display: block;
     color: #727272;
     font-family: var(--font-primary);
-    font-size: 1rem;
+    font-size: 16px;
     font-style: normal;
     font-weight: var(--font-bold);
-    line-height: 1.5rem;
-    letter-spacing: 0.0625rem;
+    line-height: 24px;
+    letter-spacing: 1px;
     text-transform: uppercase;
   }
-
   .titulo__breadcrumbs i {
     display: block;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: 20px;
+    height: 20px;
     background: url(/public/img/icon_breadcrumb.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -1687,7 +1662,6 @@ form textarea::placeholder {
     padding-left: 0;
     padding-top: var(--size-4xl);
   }
-
   .footer__conteudo__esquerda {
     width: 100%;
   }
@@ -1717,7 +1691,7 @@ form textarea::placeholder {
     gap: var(--size-xs);
     width: 100%;
     height: var(--size-5xl);
-    padding: 0 0.25rem;
+    padding: 0 4px;
     font-size: var(--size-base);
     line-height: var(--size-base);
   }
@@ -1729,23 +1703,21 @@ form textarea::placeholder {
 
   .voltar__topo__container {
     width: auto;
-    padding: 0 0.5rem;
+    padding: 0 8px;
   }
-
   .uniformes__personalizados img {
     width: 100%;
     height: auto;
   }
-
   .voltar__topo {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-top: 3.5rem;
-    margin-bottom: 3.5rem;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 56px;
+    margin-bottom: 56px;
   }
 }
 
-@media screen and (max-width: 48.75rem) {
+@media screen and (max-width: 780px) {
   .chamada__principal {
     background: url(/public/img/foto_hero_rwd_1x.webp);
     background-repeat: no-repeat;
